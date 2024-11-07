@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Special+Elite&display=swap');
+@keyframes fade {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+h1 {
+  color:#a8102f;
+  margin: 0;
+  width: 100%;
+  padding-top: 45vh;
+  text-align: center;
+  font-family: "Metal Mania", serif;
+  font-size: 7rem;
+  letter-spacing: 7px;
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #222;
+  animation: fade 5s;
+}
+#header {
+  background: rgba(0,0,0,0.2);
+  color: white;
+  transition: background-color 0.3s ease;
+  width:100%;
+  height:54px;
+  display: flex;
+  position: fixed;
+  z-index: 10000;
+}
+#title {
+  background-image: url(img/img9.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+a, button {
+  text-decoration: none;
+  color:#aaa
+}
+.navlinks:not(#TitleLink){
+  margin: auto 0;
+  width: fit-content;
+  flex:1;
+  background: none;
+  border:0;
+  font-size: 1.5rem;
+  font-family: "Special Elite", serif;
+  text-align: center;
+}
+#TitleLink {
+  flex:4;
+  background-color: rgba(0,0,0,0);
+  border:none;
+  color:crimson;
+  font-size: 2.6rem;
+  font-family: "Metal Mania", serif;
+  text-align: center;
+  letter-spacing: 2px;
+}
+#TitleLink:hover, button:hover{
+  cursor: pointer;
+}
+#test {
+  width:50%;
+  height:300px;
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  bottom: 0;
+  left:25%;
+}
+#section1 {
+  width: 100%;
+  background-color: #2c262a;
+  color:#aaa;
+  font-family: "Special Elite", serif;
+}
+#about {
+  height:calc(100vh + 108px);
+}
+#s1title {
+  height: 54px;
+  font-size: 2.6rem;
+  text-align: center;
+  margin:auto;
+  transform: translate(0, 25%);
+}
+#aboutcontent {
+  width: calc(100% - 108px);
+  height: 95vh;
+  padding-bottom: 5vh;
+  transform: translate(54px, 0);
+  background-image: url(img/img6.png);
+  background-size: cover;
+  background-position: center;
+}
+#abtext {
+  width:50%;
+  height: calc(100% - 27px);
+  background-color: rgba(0,0,0,0.3);
+  transform: translate(-27px, 27px);
+  float:right;
+  font-family: "Nunito";
+  font-size: 1.5rem;
+}
+@media (min-width: 1800px){
+body {
+  max-width: 1800px;
+}
+}
+  
